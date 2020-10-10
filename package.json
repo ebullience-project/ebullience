@@ -1,0 +1,22 @@
+{
+  "name": "ebullience",
+  "author": "qinshixixing",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebullience-project/ebullience.git"
+  },
+  "dependencies": {
+    "@ebullience/cli": "^1.0.0",
+    "@ebullience/core": "^1.0.0",
+    "@ebullience/eslint-config": "^1.0.0",
+    "@ebullience/prettier-config": "^1.0.2",
+    "@ebullience/stylelint-config": "^1.0.0",
+    "@ebullience/typescript-config": "^1.0.2"
+  },
+  "main": "dist",
+  "types": "dist",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
