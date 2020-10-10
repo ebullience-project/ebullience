@@ -26,18 +26,9 @@ There are some tools for better coding:
 Build a file named ".eslintrc.js":
 
 ```js
-const config = require('ebullience/lib/eslint.js');
-
-const rules = {
-  // your rules
+module.exports = {
+  extends: '@ebullience'
 };
-
-config.rules = {
-  ...config.rules,
-  ...rules
-};
-
-module.exports = config;
 ```
 
 Then you can use eslint to check your scripts.
@@ -46,18 +37,9 @@ Then you can use eslint to check your scripts.
 Build a file named "stylelint.config.js":
 
 ```js
-const config = require('ebullience/lib/stylelint.js');
-
-const rules = {
-  // your rules
+module.exports = {
+  extends: '@ebullience/stylelint-config'
 };
-
-config.rules = {
-  ...config.rules,
-  ...rules
-};
-
-module.exports = config;
 ```
 
 Then you can use eslint to check your style files.
@@ -66,14 +48,9 @@ Then you can use eslint to check your style files.
 Build a file named ".prettierrc.js":
 
 ```js
-const rules = {
-  // your rules
-};
-
 module.exports = {
-  ...require('ebullience/lib/prettier'),
-  ...rules
-}
+  ...require('@ebullience/prettier-config')
+};
 ```
 
 Then you can use prettier to check your scripts and style files. Prettier work with eslint and stylelint.
@@ -83,7 +60,10 @@ Build a file named "tsconfig.json":
 
 ```json
 {
-  "extends": "ebullience/src/tsconfig.json"
+  "extends": "@ebullience/typescript-config/react/tsconfig.json",
+  "include": [
+    "src"
+  ]
 }
 ```
 
