@@ -1,13 +1,13 @@
 {
   "name": "ebullience",
   "author": "qinshixixing",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebullience-project/ebullience.git"
   },
   "dependencies": {
-    "@ebullience/ebullience": "^1.0.18"
+    "@ebullience/ebullience": "^1.0.19"
   },
   "main": "dist",
   "types": "dist"
