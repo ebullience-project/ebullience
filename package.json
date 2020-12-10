@@ -7,7 +7,7 @@
     "url": "git+https://github.com/ebullience-project/ebullience.git"
   },
   "dependencies": {
-    "@ebullience/ebullience": "^1.0.22"
+    "@ebullience/ebullience": "^1.0.26"
   },
   "main": "dist",
   "types": "dist",
