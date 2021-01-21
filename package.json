@@ -1,20 +1,20 @@
 {
   "name": "ebullience",
   "author": "qinshixixing",
-  "version": "1.0.26",
+  "version": "1.1.0",
+  "license": "Apache",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebullience-project/ebullience.git"
   },
-  "dependencies": {
-    "@ebullience/core": "^1.0.25",
-    "@ebullience/eslint-config": "^1.0.28",
-    "@ebullience/prettier-config": "^1.0.26",
-    "@ebullience/stylelint-config": "^1.0.27",
-    "@ebullience/typescript-config": "^1.0.26",
-    "@ebullience/webpack-config": "^1.0.39"
-  },
-  "main": "dist",
-  "types": "dist",
-  "files": []
+  "devDependencies": {
+    "@qinshixixing/node-project-config": "^1.0.18",
+    "@tsconfig/node14": "^1.0.0",
+    "@types/babel__core": "^7.1.12",
+    "@types/eslint": "^7.2.4",
+    "@types/node": "^14.11.8",
+    "@types/prettier": "^2.1.2",
+    "@types/stylelint": "^9.10.1",
+    "@types/yargs": "^15.0.8"
+  }
 }

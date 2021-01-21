@@ -1,0 +1,40 @@
+{
+  "name": "@ebullience/code-config",
+  "author": "qinshixixing",
+  "version": "1.1.0",
+  "license": "Apache",
+  "scripts": {
+    "build": "tsc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebullience-project/ebullience.git",
+    "directory": "packages/code-config"
+  },
+  "main": "dist",
+  "types": "dist",
+  "files": [
+    "dist",
+    "typescript"
+  ],
+  "dependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-css-modules": "^1.2.0-globals",
+    "typescript": "^4.0.5"
+  }
+}

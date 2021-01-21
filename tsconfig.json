@@ -1,0 +1,6 @@
+{
+  "extends": "@qinshixixing/node-project-config/typescript/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs"
+  }
+}

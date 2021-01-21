@@ -1,0 +1,75 @@
+{
+  "name": "@ebullience/webpack-config",
+  "author": "qinshixixing",
+  "version": "1.1.0",
+  "license": "Apache",
+  "scripts": {
+    "build": "tsc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebullience-project/ebullience.git",
+    "directory": "packages/webpack-config"
+  },
+  "main": "dist",
+  "types": "dist",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "ebc": "dist/bin.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@babel/runtime-corejs3": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.4.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^4.3.0",
+    "css-minimizer-webpack-plugin": "^1.1.5",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-tags-plugin": "^2.0.17",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "mini-css-extract-plugin": "^1.3.2",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-loader": "^4.0.4",
+    "postcss-normalize": "^9.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "stylelint-webpack-plugin": "^2.1.1",
+    "terser-webpack-plugin": "^5.0.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.10.0",
+    "webpack-dev-server": "^4.0.0-beta.0",
+    "webpack-manifest-plugin": "^3.0.0",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/clean-webpack-plugin": "^0.1.3",
+    "@types/copy-webpack-plugin": "^6.3.0",
+    "@types/css-minimizer-webpack-plugin": "^1.1.1",
+    "@types/html-webpack-plugin": "^3.2.4",
+    "@types/html-webpack-tags-plugin": "^2.0.16",
+    "@types/mini-css-extract-plugin": "^1.2.1",
+    "@types/progress-bar-webpack-plugin": "^2.1.0",
+    "@types/stylelint-webpack-plugin": "^2.1.0",
+    "@types/terser-webpack-plugin": "^5.0.2",
+    "@types/webpack-manifest-plugin": "^2.1.0"
+  }
+}
