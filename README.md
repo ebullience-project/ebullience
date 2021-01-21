@@ -1,132 +1,37 @@
 # ebullience
-A cli framework for react.
-This tool is for simple react project.
 
-### install
-```shell script
-npm i -D ebullience
+脚手架工具包
+
+各个包的用法请参考各自的README.md
+
+### 编译说明
+1. node版本要求v14+
+2. typescript版本要求v4.0+，若未安装typescript或typescript版本不正确需全局安装typescript
+```shell
+sudo npm i -g typescript
+```
+3. 下载代码后在项目根目录安装依赖
+```shell
+npm i
+```
+4. 在需要编译的package目录下，安装依赖后执行tsc进行编译
+```shell
+npm i
+tsc
 ```
 
-### add commands to package.json
-Just add these commands to package.json:
-
-```json
-{
- "scripts": {
-    "build": "ebc build",
-    "dev": "ebc dev"
-  }
-}
+### 发布说明
+1. 确保当前npm仓库指向：https://registry.npmjs.org/
+2. 在需要发布的package目录下，修改package.json中的版本号
+3. 执行发布命令
+```shell
+npm publish
 ```
 
-### code quality tools
-There are some tools for better coding:
-
-#### eslint
-Build a file named ".eslintrc.js":
-
-```js
-module.exports = {
-  extends: '@ebullience'
-};
-```
-
-Then you can use eslint to check your scripts.
-
-#### stylelint
-Build a file named "stylelint.config.js":
-
-```js
-module.exports = {
-  extends: '@ebullience/stylelint-config'
-};
-```
-
-Then you can use eslint to check your style files.
-
-#### prettier
-Build a file named ".prettierrc.js":
-
-```js
-module.exports = {
-  ...require('@ebullience/prettier-config')
-};
-```
-
-Then you can use prettier to check your scripts and style files. Prettier work with eslint and stylelint.
-
-#### tsconfig
-Build a file named "tsconfig.json":
-
-```json
-{
-  "extends": "@ebullience/typescript-config/react/tsconfig.json",
-  "include": [
-    "src"
-  ]
-}
-```
-
-Then you can use typescript.
-
-### usage
-When you are develop a project, run this command:
-
-```shell script
-npm run dev
-```
-
-When you need to publish your project, run this command:
-
-```shell script
-npm run build
-```
-
-### build configuration
-You can add a file named "ebullience.config.js" in the root directory of your project. These configurations can change the result of build.
-
-```js
-module.exports = {
-  outputDir: 'build'
-};
-
-```
-All the configurations are following:
-
-#### outputName
-The rule of names of output files.
-
-type: string
-
-default: '\[name].\[contenthash]' in 'ebc build' and '\[name]' in 'ebc dev'
-#### rootDir
-Root directory of your project.
-
-type: string
-
-default: process.cwd()
-#### srcDir
-Directory of your source code.
-
-type: string
-
-default: 'src'
-#### staticDir
-Directory of static files.
-
-type: string
-
-default: 'static'
-#### outputDir
-Directory of output files.
-
-type: string
-
-default: 'dist'
-#### showDetailProgress
-Show detail messages in console during build.
-
-type: boolean
-
-default: false
-
+### 新包开发说明
+1. 在packages目录下新建文件夹，名称为包名称
+2. 在新文件夹下新建package.json，内容可参考其他包。name字段（npm上发布的包名称）设置为：@ebullience/文件夹名称
+3. 在文件夹下新建src目录用于存放源代码
+4. 如果编译ts时需要额外类型，新建type目录用于存放声明文件
+5. 添加tsconfig.json，与其他包基本一致
+6. 在src目录中开始编码
